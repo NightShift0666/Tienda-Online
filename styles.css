@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    max-height: 800px;
+    min-height: 650px;
+    background-color: rgba(0, 0, 0, 0.516);
+    position: relative;
+    
+    
+}
+
+
+
+.header__background {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header__menu{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    transition: all .3s ease;
+    
+    
+    
+
+}
+.header__separator{
+        
+    display: none;
+}
+
+.header__menu.fixed{
+
+     background-color: rgba(0, 0, 0, 0.758);;
+}
+
+.header__buttoncontainer{
+
+    
+    position: relative;
+    pointer-events: none;
+    
+    
+    
+}
+
+.header__hamburger{
+
+
+    background: none;
+    border: none;
+    position: relative;
+    font-size: 30px;
+    color:white;
+    cursor: pointer;
+    transition: transform .5s ease;
+    
+}
+
+
+
+.header__hamburger.active{
+    transform: rotate(360deg);
+}
+
+
+
+
+.header__logoimagen{
+    width: 50px;
+    height: 50px;
+}
+.header__name{
+    display: none;
+}
+
+.header__navbar{
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.758);
+    bottom: -270%;
+    width: 100%;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 2px solid rgba(85, 85, 85, 0.621);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     opacity: 0;
+    transform: translateY(-500%); 
+    transition: all .6s ease;
+    
+}
+
+.header__navbar.active{
+
+    opacity: 1;
+    display: flex;
+    transform: translateY(0%);
+}
+
+.header__userimg{
+
+    display: none;
+}
+
+
+.header__menitem{
+    font-size: 20px;
+    padding: 20px;
+    
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ff2950;
+    font-weight: 500;
+    
+}
+
+
+
+.header__menitem:hover{
+
+    background-color: rgba(76, 76, 76, 0.553);
+}
+
+.header__info{
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+    
+    
+   
+}
+
+
+.header__info h1{
+    color: aliceblue;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.header__info h2{
+    
+    font-size: 20px;
+    color: rgba(240, 248, 255, 0.57);
+    margin-bottom: 30px;
+    
+}
+
+.header__button{
+
+    border: none;
+    background: none;
+    color: aliceblue;
+    background-color: #ff2950;
+    border-radius: 30px;
+    width: 150px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.header__button--special{
+    background: none;
+    border: 3px solid #ff2950;
+}
+
+.header__arrow{
+    position: absolute;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    bottom: 5%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+    transform: translateX(-50%);
+    animation: bounceArrow .7s ease infinite;
+    
+}
+
+.header__arrowimg{
+    
+    width: 40px;
+}
+
+@keyframes bounceArrow {
+    
+    0%{
+        bottom: 5%;
+    }
+
+    50%{
+        bottom: 4%;
+    }
+
+    100%{
+        bottom: 5%;
+    }
+}
+
+
+.products{
+    height: 100vh;
+    background-color: #0b0b0c;
+}
+
+@media screen and (min-width: 769px) {
+    
+
+    
+    .header__hamburger{
+
+
+        display: none;
+        
+    }
+
+    .header__separator{
+        
+        display: block;
+        width: 2px;
+        height: 50px;
+        background-color: #ff295065;
+    }
+
+    .header__logo{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-left: 3%;
+        height: 70px;
+        width: 200px;
+    }
+    .header__name{
+        display: block;
+        color: aliceblue;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .header__navbar{
+
+        position: relative;
+        background-color: rgba(255, 255, 255, 0);
+        bottom: 0%;
+        width: 400px;
+        
+        border: none;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 00px;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+         opacity: 1;
+        transform: translateY(0%); 
+        transition: all .6s ease;
+        margin-right: 5%;
+         /* border: 2px solid red;  */
+         
+        
+    }
+
+    .header__userimg{
+        display: block;
+    }
+
+    .header__menitem:hover{
+
+        background: none;
+    }
+
+   
+    .header__menitem{
+        font-size: 15px;
+        padding: 0px;
+        
+        width: 70px;
+        text-align: center;
+        text-decoration: none;
+        color: aliceblue;
+        font-weight: 300;
+        transition: all .3s ease;
+          
+        
+    }
+
+   
+   
+
+    .header__menitem:hover{
+        
+          color: rgba(151, 151, 151, 0.641);
+          
+        
+    }
+
+
+    
+    .header__menitem--iniciars{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 150px;
+        
+        
+    }
+    .header__menitem--inicio{
+
+        width: 50px;
+    }
+    .header__menitem--tienda{
+
+        width: 60px;
+    }
+
+    .header__menitem--contacto{
+
+        width: 80px;
+    }
+}
+
+  @media only screen and (max-width: 768px) and (orientation: landscape) {
+   
+    .header__navbar{
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.758);
+    bottom: -160%;
+    width: 100%;
+    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 2px solid rgba(85, 85, 85, 0.621);
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     opacity: 0;
+    transform: translateY(-500%); 
+    transition: all .6s ease;
+    
+}
+
+
+.header__menitem{
+    font-size: 15px;
+    padding: 10px;
+    
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ff2950;
+    font-weight: 500;
+    
+}
+  }  
+
+
+ 
