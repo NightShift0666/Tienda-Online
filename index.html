@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NightShift | WebPage</title>
+    <link rel="icon" type="image/svg+xml" href="resources/logo.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -27,13 +28,13 @@
 
     <header class="header" id="home">
 
-        <img class="header__background" src="resources/hero-background.jpg"  alt="">
+        <img class="header__background" src="resources/hero-background.jpg" alt="">
         <div class="header__menu">
-            
 
-                <button class="header__hamburger" onclick="toggleMenu()">☰</button>
-                
-            
+
+            <button class="header__hamburger" onclick="toggleMenu()">☰</button>
+
+
 
             <div class="header__logo">
 
@@ -43,12 +44,13 @@
             </div>
             <nav class="header__navbar">
 
-                
+
                 <a href="" class="header__menitem header__menitem--inicio">Inicio</a>
                 <a href="" class="header__menitem header__menitem--tienda">Tienda</a>
                 <a href="" class="header__menitem header__menitem--contacto">Contacto</a>
-                <a href="" class="header__menitem  header__menitem--iniciars">Iniciar Sesion<img src="resources/user.svg" class="header__userimg"></a>
-                
+                <a href="" class="header__menitem  header__menitem--iniciars">Iniciar Sesion<img
+                        src="resources/user.svg" class="header__userimg"></a>
+
 
 
             </nav>
@@ -56,19 +58,80 @@
 
         <div class="header__info">
             <h1>Tienda Online</h1>
-            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis unde harum voluptate reiciendis consequuntur vero laudantium quaerat fuga expedita!</h2>
+            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis unde harum voluptate
+                reiciendis consequuntur vero laudantium quaerat fuga expedita!</h2>
             <button class="header__button">Comprar</button>
             <button class="header__button header__button--special">Registarse</button>
         </div>
 
-        <a href="#shop" class="header__arrow" >
-           
+        <a href="#discount" class="header__arrow">
+
             <img src="resources/arrow.svg" class="header__arrowimg">
         </a>
     </header>
 
-    <section class="products" id="shop">
+    <section class="offers" id="discount">
 
+        <img src="resources/offers-background.jpg" class="offers__background">
+        <h1 class="offers__title">OFERTAS</h1>
+
+        <div class="offers__container">
+
+
+            <div class="offers__boxes offers__boxes--headset">
+
+                <img src="resources/headset.png" class="offers__img offers__img--headset">
+                <h2 class="offers__discount">30%<span class="offers__porcent offers__porcent--chasis">OFF</span></h2>
+                <h3 class="offers__name">Audifonos</h3>
+                <button class="offers__button">Comprar</button>
+                <button class="offers__button">Ver más</button>
+
+            </div>
+
+
+            <div class="offers__boxes offers__boxes--chasis">
+
+                <img src="resources/chasis.png" class="offers__img offers__img--chasis">
+                <h2 class="offers__discount">30%<span class="offers__porcent offers__porcent--chasis">OFF</span></h2>
+                <h3 class="offers__name">Gabinetes</h3>
+                <button class="offers__button">Comprar</button>
+                <button class="offers__button">Ver más</button>
+
+            </div>
+
+
+            <div class="offers__boxes offers__boxes--graphic">
+
+                <img src="resources/graphic.png" class="offers__img offers__img--graphic">
+                <h2 class="offers__discount">30%<span class="offers__porcent offers__porcent--graphic">OFF</span></h2>
+                <h3 class="offers__name offers__name--graphic">Tarjetas Graficas</h3>
+                <button class="offers__button">Comprar</button>
+                <button class="offers__button">Ver más</button>
+
+
+                 
+
+            </div>
+
+
+            <div class="offers__boxes offers__boxes--keyboard">
+
+                <img src="resources/keyboard.png" class="offers__img offers__img--keyboard">
+                <h2 class="offers__discount">30%<span class="offers__porcent offers__porcent--keyboard">OFF</span></h2>
+                <h3 class="offers__name">Teclados</h3>
+                <button class="offers__button">Comprar</button>
+                <button class="offers__button">Ver más</button>
+
+            </div>
+
+        </div>
+        <div class="offers__control">
+
+            <div class="offers__circles"></div>
+            <div class="offers__circles"></div>
+            <div class="offers__circles"></div>
+            <div class="offers__circles"></div>
+        </div>
 
 
     </section>

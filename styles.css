@@ -8,7 +8,26 @@
 
 html{
     scroll-behavior: smooth;
+    
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background-color: #09090a;
+    
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 5px;
+  }
+  
 
 header {
     height: 100vh;
@@ -37,12 +56,14 @@ header {
     position: fixed;
     display: flex;
     width: 100%;
+    height: 90px;
     top: 0;
     
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     transition: all .3s ease;
+    z-index: 99;
     
     
     
@@ -241,11 +262,292 @@ header {
     }
 }
 
+/* -------------------------------OFERTAS------------------------------ */
 
-.products{
-    height: 100vh;
-    background-color: #0b0b0c;
+.offers{
+    
+    
+    background-color: rgba(0, 0, 0, 0.666);
+    position: relative;
+    padding-top: 130px;
+    position: relative;
+    
 }
+
+.offers__background {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.offers__discount{
+    
+    margin-bottom: 10px;
+
+}
+
+.offers__title{
+
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: 55px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    
+}
+
+.offers__container{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    
+    
+}
+
+.offers__boxes{
+
+    background-color: rgb(147, 147, 147);
+    height: 300px;
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    max-width: 400px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    
+    
+
+}
+
+.offers__discount{
+
+    color: var(--secondary);
+    font-size: 30px;
+}
+
+.offers__porcent{
+
+    color: rgb(153, 255, 0);
+    font-size: 20px;
+}
+
+.offers__name{
+
+    color: var(--secondary);
+    font-size: 35px;
+    z-index: 1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0 #555, 3px 3px 0 #555, 4px 4px 0 #555;
+}
+
+
+.offers__button{
+    
+    border: none;
+    background: none;
+    margin-bottom: 10px;
+    color: var(--secondary);
+    border-radius: 10px;
+    background-color: rgb(0, 149, 255);
+    padding: 5px 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color .3s ease;
+}
+
+.offers__button:hover{
+    
+    
+    background-color: rgb(3, 121, 205);
+}
+.offers__img{
+    
+    position: absolute;
+}
+
+.offers__boxes--headset{
+    background: rgb(252,41,71);
+background: linear-gradient(0deg, rgba(252,41,71,1) 0%, rgba(255,0,173,1) 100%);
+}
+
+.offers__img--headset{
+
+   
+    
+    width: 300px;
+    height: 200px;
+    bottom: -20%;
+    right: -40%;
+
+}
+
+.offers__boxes--chasis{
+    background: rgb(113,73,198);
+background: linear-gradient(0deg, rgba(113,73,198,1) 0%, rgba(20,178,245,1) 100%);
+}
+
+.offers__img--chasis{
+
+
+    width: 250px;
+    height: 250px;
+    right: -30%;
+    bottom: -20%;
+    
+}
+
+.offers__boxes--graphic{
+    background: rgb(35,204,255);
+background: linear-gradient(0deg, rgba(35,204,255,1) 0%, rgba(20,245,180,1) 100%);
+}
+
+.offers__img--graphic{
+
+    width: 260px;
+    height: 130px;
+    bottom: -10%;
+    right: -16%;
+    
+}
+
+.offers__name--graphic{
+ 
+    font-size: 35px;
+}
+
+.offers__boxes--keyboard{
+    background: rgb(255,16,56);
+background: linear-gradient(0deg, rgba(255,16,56,1) 0%, rgba(245,153,20,1) 100%);
+}
+
+.offers__img--keyboard{
+
+    width: 260px;
+    height: 260px;
+    bottom: -20%;
+    right: -20%
+
+}
+
+.offers__control{
+
+
+    display: none;
+ }
+
+ @media screen and (min-width: 400px) {
+    
+    
+    .offers__boxes{
+        padding: 30px;
+    }
+    .offers__discount{
+
+        color: var(--secondary);
+        font-size: 50px;
+    }
+    
+    .offers__porcent{
+    
+        
+        font-size: 40px;
+    }
+    
+    .offers__name{
+    
+        color: var(--secondary);
+        font-size: 45px;
+        z-index: 1;
+        margin-bottom: 30px;
+        text-shadow: 2px 2px 0 #555, 3px 3px 0 #555, 4px 4px 0 #555;
+    }
+
+    .offers__button{
+    
+        border: none;
+        background: none;
+        margin-bottom: 20px;
+        color: var(--secondary);
+        border-radius: 10px;
+        background-color: rgb(0, 149, 255);
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 20px;
+        z-index: 1;
+        transition: background-color .3s ease;
+    }
+
+    .offers__img--headset{
+
+   
+    
+        width: 400px;
+        height: 260px;
+        bottom: -20%;
+        right: -40%;
+    
+    }
+
+    .offers__img--chasis{
+
+   
+    
+        width: 350px;
+        height: 350px;
+        bottom: -30%;
+    
+    }
+
+      .offers__img--graphic{
+
+        width: 320px;
+        height: 200px;
+        bottom: -20%;
+        right: -20%;
+        
+    }  
+
+    .offers__name--graphic{
+ 
+        font-size: 30px;
+    }
+
+    
+
+    .offers__img--keyboard{
+
+        width: 320px;
+        height: 320px;
+        bottom: -30%;
+        right: -20%
+    
+    }
+    
+ }
+
+/* ------------------------------------------------------------------------- */
+
+/* .shop{
+   
+    height: 100vh;
+    max-height: 800px;
+    min-height: 650px;
+    background-color: rgb(255, 49, 77);
+} */
+
+
 
 @media screen and (min-width: 769px) {
     
@@ -365,6 +667,77 @@ header {
 
         width: 80px;
     }
+
+
+    /* ----------------------------OFERTAS--------------------------- */
+
+    .offers__container{
+    
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        
+        
+    }
+
+    
+        .offers__boxes{
+
+           
+            
+            
+        
+        }
+    
+
+    .offers__boxes--headset{
+
+        
+        background-color: #09090a;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        
+        
+    }
+
+    .offers__boxes--chasis{
+
+        
+        grid-column-start: 3;
+        grid-column-end:4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+
+    .offers__boxes--graphic{
+
+        
+        grid-column-start: 2;
+        grid-column-end:4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .offers__boxes--keyboard{
+
+        
+        grid-column-start: 1;
+        grid-column-end:2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    
+
 }
 
   @media only screen and (max-width: 768px) and (orientation: landscape) {
