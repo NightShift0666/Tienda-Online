@@ -6,28 +6,28 @@
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
-    
+
 }
 
 ::-webkit-scrollbar {
     width: 5px;
-    
-  }
-  
-  
-  ::-webkit-scrollbar-track {
+
+}
+
+
+::-webkit-scrollbar-track {
     background-color: #09090a;
-    
-  }
-  
-  
-  ::-webkit-scrollbar-thumb {
+
+}
+
+
+::-webkit-scrollbar-thumb {
     background-color: var(--primary);
     border-radius: 5px;
-  }
-  
+}
+
 
 header {
     height: 100vh;
@@ -35,8 +35,8 @@ header {
     min-height: 650px;
     background-color: rgba(0, 0, 0, 0.516);
     position: relative;
-    
-    
+
+
 }
 
 
@@ -52,80 +52,83 @@ header {
     z-index: -1;
 }
 
-.header__menu{
+.header__menu {
     position: fixed;
     display: flex;
     width: 100%;
     height: 90px;
     top: 0;
-    
+
     align-items: center;
     justify-content: space-between;
     padding: 20px;
     transition: all .3s ease;
     z-index: 99;
-    
-    
-    
+
+
+
 
 }
-.header__separator{
-        
+
+.header__separator {
+
     display: none;
 }
 
-.header__menu.fixed{
+.header__menu.fixed {
 
-     background-color: rgba(0, 0, 0, 0.758);;
+    background-color: rgba(0, 0, 0, 0.758);
+    ;
 }
 
-.header__buttoncontainer{
+.header__buttoncontainer {
 
-    
+
     position: relative;
     pointer-events: none;
-    
-    
-    
+
+
+
 }
 
-.header__hamburger{
+.header__hamburger {
 
 
     background: none;
     border: none;
     position: relative;
     font-size: 30px;
-    color:white;
+    color: white;
     cursor: pointer;
     transition: transform .5s ease;
-    
+
 }
 
 
 
-.header__hamburger.active{
+.header__hamburger.active {
     transform: rotate(360deg);
 }
 
 
 
 
-.header__logoimagen{
+.header__logoimagen {
     width: 50px;
     height: 50px;
 }
-.header__name{
+
+.header__name {
     display: none;
 }
 
-.header__navbar{
+.header__navbar {
 
     position: absolute;
     background-color: rgba(0, 0, 0, 0.758);
     bottom: -270%;
     width: 100%;
-    
+
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom: 2px solid rgba(85, 85, 85, 0.621);
@@ -134,47 +137,47 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     opacity: 0;
-    transform: translateY(-500%); 
+    opacity: 0;
+    transform: translateY(-500%);
     transition: all .6s ease;
-    
+
 }
 
-.header__navbar.active{
+.header__navbar.active {
 
     opacity: 1;
     display: flex;
     transform: translateY(0%);
 }
 
-.header__userimg{
+.header__userimg {
 
     display: none;
 }
 
 
-.header__menitem{
+.header__menitem {
     font-size: 20px;
     padding: 20px;
-    
+
     width: 100%;
     text-align: center;
     text-decoration: none;
     color: #ff2950;
     font-weight: 500;
-    
+
 }
 
 
 
-.header__menitem:hover{
+.header__menitem:hover {
 
     background-color: rgba(76, 76, 76, 0.553);
 }
 
-.header__info{
+.header__info {
 
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,29 +186,29 @@ header {
     height: 100%;
     margin: 0 auto;
     text-align: center;
-    
-    
-    
-    
-   
+
+
+
+
+
 }
 
 
-.header__info h1{
+.header__info h1 {
     color: aliceblue;
     font-size: 40px;
     margin-bottom: 20px;
 }
 
-.header__info h2{
-    
+.header__info h2 {
+
     font-size: 20px;
     color: rgba(240, 248, 255, 0.57);
     margin-bottom: 30px;
-    
+
 }
 
-.header__button{
+.header__button {
 
     border: none;
     background: none;
@@ -218,19 +221,19 @@ header {
     cursor: pointer;
 }
 
-.header__button--special{
+.header__button--special {
     background: none;
     border: 3px solid #ff2950;
 }
 
-.header__arrow{
+.header__arrow {
     position: absolute;
     background: none;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     bottom: 5%;
     left: 50%;
     width: 50px;
@@ -240,38 +243,41 @@ header {
     transform: translateX(-50%);
     animation: bounceArrow .7s ease infinite;
     
+
 }
 
-.header__arrowimg{
-    
+.header__arrowimg {
+
     width: 40px;
 }
 
 @keyframes bounceArrow {
-    
-    0%{
+
+    0% {
         bottom: 5%;
     }
 
-    50%{
+    50% {
         bottom: 4%;
     }
 
-    100%{
+    100% {
         bottom: 5%;
     }
 }
 
 /* -------------------------------OFERTAS------------------------------ */
 
-.offers{
-    
-    
+.offers {
+
+
+
     background-color: rgba(0, 0, 0, 0.666);
     position: relative;
     padding-top: 130px;
     position: relative;
-    
+    overflow: hidden;
+
 }
 
 .offers__background {
@@ -285,36 +291,31 @@ header {
     z-index: -1;
 }
 
-.offers__discount{
-    
-    margin-bottom: 10px;
 
-}
-
-.offers__title{
+.offers__title {
 
     margin: 0;
     margin-bottom: 60px;
     font-size: 55px;
     text-align: center;
     color: rgb(255, 255, 255);
-    
+
 }
 
-.offers__container{
-    
+.offers__container {
+
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
-    
-    
+
+
+
 }
 
-.offers__boxes{
+.offers__boxes {
 
-    background-color: rgb(147, 147, 147);
+
     height: 300px;
     width: 80%;
     border-radius: 30px;
@@ -326,156 +327,165 @@ header {
     padding: 20px;
     position: relative;
     margin-bottom: 50px;
-    
-    
+    border: 2px solid var(--primary);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+
 
 }
 
-.offers__discount{
+.offers__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.offers__text {
+   display: none;
+}
+
+
+.offers__discount {
 
     color: var(--secondary);
     font-size: 30px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
 }
 
-.offers__porcent{
+.offers__porcent {
 
     color: rgb(153, 255, 0);
+    font-weight: 400;
     font-size: 20px;
+
 }
 
-.offers__name{
+.offers__name {
 
     color: var(--secondary);
     font-size: 35px;
     z-index: 1;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 0 #555, 3px 3px 0 #555, 4px 4px 0 #555;
 }
 
+.offers__buttons {
+    display: flex;
+    flex-direction: column;
+}
 
-.offers__button{
-    
+.offers__button {
+
     border: none;
     background: none;
     margin-bottom: 10px;
     color: var(--secondary);
     border-radius: 10px;
-    background-color: rgb(0, 149, 255);
+    background-color: rgb(39, 165, 255);
     padding: 5px 10px;
     cursor: pointer;
     z-index: 1;
-    transition: background-color .3s ease;
+    transition: all .3s ease;
 }
 
-.offers__button:hover{
-    
-    
-    background-color: rgb(3, 121, 205);
-}
-.offers__img{
-    
+
+
+.offers__img {
+
     position: absolute;
 }
 
-.offers__boxes--headset{
-    background: rgb(252,41,71);
-background: linear-gradient(0deg, rgba(252,41,71,1) 0%, rgba(255,0,173,1) 100%);
-}
 
-.offers__img--headset{
 
-   
-    
-    width: 300px;
-    height: 200px;
+.offers__img--headset {
+
+
+
+    width: 350px;
+    height: 230px;
     bottom: -20%;
     right: -40%;
 
 }
 
-.offers__boxes--chasis{
-    background: rgb(113,73,198);
-background: linear-gradient(0deg, rgba(113,73,198,1) 0%, rgba(20,178,245,1) 100%);
-}
 
-.offers__img--chasis{
+
+.offers__img--chasis {
 
 
     width: 250px;
     height: 250px;
-    right: -30%;
+    right: -25%;
     bottom: -20%;
-    
+
 }
 
-.offers__boxes--graphic{
-    background: rgb(35,204,255);
-background: linear-gradient(0deg, rgba(35,204,255,1) 0%, rgba(20,245,180,1) 100%);
-}
 
-.offers__img--graphic{
+
+.offers__img--graphic {
 
     width: 260px;
     height: 130px;
     bottom: -10%;
     right: -16%;
-    
+
 }
 
-.offers__name--graphic{
- 
+.offers__name--graphic {
+
     font-size: 35px;
 }
 
-.offers__boxes--keyboard{
-    background: rgb(255,16,56);
-background: linear-gradient(0deg, rgba(255,16,56,1) 0%, rgba(245,153,20,1) 100%);
-}
 
-.offers__img--keyboard{
+
+.offers__img--keyboard {
 
     width: 260px;
     height: 260px;
     bottom: -20%;
     right: -20%
-
 }
 
-.offers__control{
+.offers__control {
 
 
     display: none;
- }
+}
 
- @media screen and (min-width: 400px) {
-    
-    
-    .offers__boxes{
+@media screen and (min-width: 400px) {
+
+
+    .offers__boxes {
         padding: 30px;
     }
-    .offers__discount{
+
+    .offers__discount {
 
         color: var(--secondary);
         font-size: 50px;
-    }
-    
-    .offers__porcent{
-    
-        
-        font-size: 40px;
-    }
-    
-    .offers__name{
-    
-        color: var(--secondary);
-        font-size: 45px;
-        z-index: 1;
-        margin-bottom: 30px;
-        text-shadow: 2px 2px 0 #555, 3px 3px 0 #555, 4px 4px 0 #555;
+
     }
 
-    .offers__button{
-    
+    .offers__porcent {
+
+
+        font-size: 30px;
+    }
+
+    .offers__name {
+
+        color: var(--secondary);
+        font-size: 45px;
+
+        z-index: 1;
+        margin-bottom: 30px;
+
+    }
+
+    .offers__button {
+
         border: none;
         background: none;
         margin-bottom: 20px;
@@ -489,53 +499,52 @@ background: linear-gradient(0deg, rgba(255,16,56,1) 0%, rgba(245,153,20,1) 100%)
         transition: background-color .3s ease;
     }
 
-    .offers__img--headset{
+    .offers__img--headset {
 
-   
-    
+
+
         width: 400px;
         height: 260px;
         bottom: -20%;
         right: -40%;
-    
+
     }
 
-    .offers__img--chasis{
+    .offers__img--chasis {
 
-   
-    
+
+
         width: 350px;
         height: 350px;
         bottom: -30%;
-    
+
     }
 
-      .offers__img--graphic{
+    .offers__img--graphic {
 
         width: 320px;
         height: 200px;
         bottom: -20%;
         right: -20%;
-        
-    }  
 
-    .offers__name--graphic{
- 
+    }
+
+    .offers__name--graphic {
+
         font-size: 30px;
     }
 
-    
 
-    .offers__img--keyboard{
+
+    .offers__img--keyboard {
 
         width: 320px;
         height: 320px;
         bottom: -30%;
         right: -20%
-    
     }
-    
- }
+
+}
 
 /* ------------------------------------------------------------------------- */
 
@@ -550,25 +559,25 @@ background: linear-gradient(0deg, rgba(255,16,56,1) 0%, rgba(245,153,20,1) 100%)
 
 
 @media screen and (min-width: 769px) {
-    
 
-    
-    .header__hamburger{
+
+
+    .header__hamburger {
 
 
         display: none;
-        
+
     }
 
-    .header__separator{
-        
+    .header__separator {
+
         display: block;
         width: 2px;
         height: 50px;
         background-color: #ff295065;
     }
 
-    .header__logo{
+    .header__logo {
 
         display: flex;
         justify-content: space-between;
@@ -578,20 +587,21 @@ background: linear-gradient(0deg, rgba(255,16,56,1) 0%, rgba(245,153,20,1) 100%)
         height: 70px;
         width: 200px;
     }
-    .header__name{
+
+    .header__name {
         display: block;
         color: aliceblue;
         text-decoration: none;
         font-weight: 500;
     }
 
-    .header__navbar{
+    .header__navbar {
 
         position: relative;
         background-color: rgba(255, 255, 255, 0);
         bottom: 0%;
         width: 400px;
-        
+
         border: none;
         border-bottom-left-radius: 0px;
         border-bottom-right-radius: 00px;
@@ -600,70 +610,72 @@ background: linear-gradient(0deg, rgba(255,16,56,1) 0%, rgba(245,153,20,1) 100%)
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-         opacity: 1;
-        transform: translateY(0%); 
+        opacity: 1;
+        transform: translateY(0%);
         transition: all .6s ease;
         margin-right: 5%;
-         /* border: 2px solid red;  */
-         
-        
+        /* border: 2px solid red;  */
+
+
     }
 
-    .header__userimg{
+    .header__userimg {
         display: block;
     }
 
-    .header__menitem:hover{
+    .header__menitem:hover {
 
         background: none;
     }
 
-   
-    .header__menitem{
+
+    .header__menitem {
         font-size: 15px;
         padding: 0px;
-        
+
         width: 70px;
         text-align: center;
         text-decoration: none;
         color: aliceblue;
         font-weight: 300;
         transition: all .3s ease;
-          
-        
-    }
 
-   
-   
 
-    .header__menitem:hover{
-        
-          color: rgba(151, 151, 151, 0.641);
-          
-        
     }
 
 
-    
-    .header__menitem--iniciars{
+
+
+    .header__menitem:hover {
+
+        color: rgba(151, 151, 151, 0.641);
+
+
+    }
+
+
+
+    .header__menitem--iniciars {
 
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 150px;
-        
-        
+
+
     }
-    .header__menitem--inicio{
+
+    .header__menitem--inicio {
 
         width: 50px;
     }
-    .header__menitem--tienda{
+
+    .header__menitem--tienda {
 
         width: 60px;
     }
 
-    .header__menitem--contacto{
+    .header__menitem--contacto {
 
         width: 80px;
     }
@@ -671,111 +683,208 @@ background: linear-gradient(0deg, rgba(255,16,56,1) 0%, rgba(245,153,20,1) 100%)
 
     /* ----------------------------OFERTAS--------------------------- */
 
-    .offers__container{
+    .offers {
+
+        height: 110vh;
+        max-height: 800px;
+        min-height: 650px;
+        
+    }
+
+    .offers__container {
+
+        width: 400%;
+        display: flex;
+         margin-left: -100%; 
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        
+
+
+
+
+
+    }
+
+    .offers__boxes {
+
+
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        padding: 60px;
+        position: relative;
+        
+        
+    }
+
+    .offers__discount{
+        position: absolute;
+        top: -5%;
+        right: -10%;
+        background-color: var(--primary);
+        padding: 5px 10px;
+        border-radius: 30px;
+        
+    }
+
+    .offers__info {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+        
+    }
+
+    .offers__discount{
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    .offers__porcent{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .offers__text {
+        display: block;
+        color: var(--secondary);
+        width: 400px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .offers__buttons {
+        flex-direction: row;
+        justify-content: space-between;
+        
+        width: 280px;
+    }
+
+  
+
+    .offers__button{
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin: 0;
+    }
+
+    .offers__button--special{
+        border: 2px solid rgb(0, 149, 255);
+        background: none;
+    }
+
+    .offers__img--headset {
+
+
+
+        width: 450px;
+        height: 300px;
+        bottom: -20%;
+        right: -30%;
+
+    }
+
+    .offers__img--chasis {
+
+
+
+        width: 350px;
+        height: 350px;
+        bottom: -25%;
+        
+
+    }
+
+    .offers__img--graphic {
+
+        width: 320px;
+        height: 200px;
+        bottom: -10%;
+        right: -20%;
+
+    }
+
+
+
+    .offers__img--keyboard {
+
+        width: 350px;
+        height: 350px;
+        bottom: -30%;
+        right: -20%
+    }
+
+
+    .offers__control {
+
+
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin: 0 auto;
+        
+        
+    }
+
+    .offers__circles{
+        width: 60px;
+        height: 8px;
+        z-index: 99;
+        cursor: pointer;
+        border-radius: 30px;
+        background-color: rgba(135, 135, 135, 0.734);
+        transition: all .3s ease;
+    }
+
     
+
+   
+
+
+
+   
+
+
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+
+    .header__navbar {
+
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.758);
+        bottom: -160%;
         width: 100%;
+
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom: 2px solid rgba(85, 85, 85, 0.621);
+        left: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        overflow: hidden;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
-        
-        
+        justify-content: center;
+        opacity: 0;
+        transform: translateY(-500%);
+        transition: all .6s ease;
+
     }
 
-    
-        .offers__boxes{
 
-           
-            
-            
-        
-        }
-    
+    .header__menitem {
+        font-size: 15px;
+        padding: 10px;
 
-    .offers__boxes--headset{
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: #ff2950;
+        font-weight: 500;
 
-        
-        background-color: #09090a;
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-
-        
-        
     }
-
-    .offers__boxes--chasis{
-
-        
-        grid-column-start: 3;
-        grid-column-end:4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    
-
-    .offers__boxes--graphic{
-
-        
-        grid-column-start: 2;
-        grid-column-end:4;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
-    .offers__boxes--keyboard{
-
-        
-        grid-column-start: 1;
-        grid-column-end:2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    
-
 }
-
-  @media only screen and (max-width: 768px) and (orientation: landscape) {
-   
-    .header__navbar{
-
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.758);
-    bottom: -160%;
-    width: 100%;
-    
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom: 2px solid rgba(85, 85, 85, 0.621);
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-     opacity: 0;
-    transform: translateY(-500%); 
-    transition: all .6s ease;
-    
-}
-
-
-.header__menitem{
-    font-size: 15px;
-    padding: 10px;
-    
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: #ff2950;
-    font-weight: 500;
-    
-}
-  }  
-
-
- 
