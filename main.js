@@ -52,7 +52,7 @@ let menu = document.querySelector('.header__menu');
 function screenWidth() {
    
    let width = window.innerWidth;
-   console.log(width);
+   
 
    if(width > 768){
 
@@ -111,8 +111,9 @@ function screenWidth() {
       let boxesContainer = document.querySelector('.offers__container'); 
       let firstBox = document.querySelectorAll('.offers__boxes')[0];
       
-      boxesContainer.style.marginLeft = '-200%';
+      
       boxesContainer.style.transition = 'all .8s ease';
+      boxesContainer.style.marginLeft = '-200%';
       setTimeout(() => {
          
          boxesContainer.insertAdjacentElement('beforeend', firstBox);

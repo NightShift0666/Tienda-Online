@@ -242,7 +242,7 @@ header {
     cursor: pointer;
     transform: translateX(-50%);
     animation: bounceArrow .7s ease infinite;
-    
+
 
 }
 
@@ -342,7 +342,7 @@ header {
 }
 
 .offers__text {
-   display: none;
+    display: none;
 }
 
 
@@ -554,7 +554,159 @@ header {
     max-height: 800px;
     min-height: 650px;
     background-color: rgb(255, 49, 77);
+    
 } */
+
+
+/* -----------------------------FOOTER---------------------------------- */
+
+
+.footer {
+    height: 90vh;
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer__form {
+
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+
+.footer__formtitle {
+
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.footer__formtext {
+
+    color: rgb(96, 96, 96);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.footer__{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__formcontainer{
+
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 16px;
+    
+
+}
+
+.footer__input {
+
+    height: 40px;
+    font-size: 15px;
+    width: 90%;
+    
+    margin: 0;
+    border: none;
+
+}
+
+.footer__submit {
+
+    width: 40px;
+    margin: 0;
+    border: none;
+    background-color: var(--primary);
+    font-size: 20px;
+}
+
+.footer__tym{
+    color: rgb(96, 96, 96);
+}
+
+.footer__atym{
+
+    color: rgb(162, 162, 162);
+}
+
+
+.footer__social{
+
+    width: 100%;
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer__separator{
+    display: none;
+}
+
+.footer__socialmedia{
+    
+    width: 180px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info{
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer__info span{
+    color: rgb(96, 96, 96);
+}
+
+.footer__logo{
+
+    width: 40px;
+
+}
+
+.footer__legal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer__legalseparator{
+
+    width: 2px;
+    height: 20px;
+    background-color: var(--primary);
+    margin: 0 20px 0 20px;
+}
+
+
+.footer__legaltext{
+    color:  rgb(162, 162, 162);
+    width: 100px;
+}
 
 
 
@@ -614,7 +766,7 @@ header {
         transform: translateY(0%);
         transition: all .6s ease;
         margin-right: 5%;
-        /* border: 2px solid red;  */
+        
 
 
     }
@@ -688,18 +840,18 @@ header {
         height: 110vh;
         max-height: 800px;
         min-height: 650px;
-        
+
     }
 
     .offers__container {
 
         width: 400%;
         display: flex;
-         margin-left: -100%; 
+        margin-left: -100%;
         justify-content: space-around;
         flex-direction: row;
         align-items: center;
-        
+
 
 
 
@@ -718,33 +870,33 @@ header {
         max-width: 600px;
         padding: 60px;
         position: relative;
-        
-        
+
+
     }
 
-    .offers__discount{
+    .offers__discount {
         position: absolute;
         top: -5%;
         right: -10%;
         background-color: var(--primary);
         padding: 5px 10px;
         border-radius: 30px;
-        
+
     }
 
     .offers__info {
         flex-direction: row-reverse;
         justify-content: space-between;
-        
-        
+
+
     }
 
-    .offers__discount{
+    .offers__discount {
         font-weight: 300;
         font-size: 30px;
     }
 
-    .offers__porcent{
+    .offers__porcent {
         font-size: 15px;
         font-weight: 500;
     }
@@ -760,19 +912,19 @@ header {
     .offers__buttons {
         flex-direction: row;
         justify-content: space-between;
-        
+
         width: 280px;
     }
 
-  
 
-    .offers__button{
+
+    .offers__button {
         padding: 10px 20px;
         border-radius: 20px;
         margin: 0;
     }
 
-    .offers__button--special{
+    .offers__button--special {
         border: 2px solid rgb(0, 149, 255);
         background: none;
     }
@@ -795,7 +947,7 @@ header {
         width: 350px;
         height: 350px;
         bottom: -25%;
-        
+
 
     }
 
@@ -827,11 +979,11 @@ header {
         justify-content: space-between;
         width: 300px;
         margin: 0 auto;
-        
-        
+
+
     }
 
-    .offers__circles{
+    .offers__circles {
         width: 60px;
         height: 8px;
         z-index: 99;
@@ -841,13 +993,13 @@ header {
         transition: all .3s ease;
     }
 
-    
-
-   
 
 
 
-   
+
+
+
+
 
 
 }
