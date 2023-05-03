@@ -47,6 +47,23 @@ let menu = document.querySelector('.header__menu');
    distance: '180px'
  });
 
+ window.sr = ScrollReveal();
+
+ sr.reveal('.offers__container', {
+   duration: 2000,
+   origin: 'bottom',
+   distance: '180px'
+ });
+
+
+ window.sr = ScrollReveal();
+
+ sr.reveal('.offers__title', {
+   duration: 1000,
+   origin: 'bottom',
+   distance: '180px'
+ });
+
 
  
 function screenWidth() {
@@ -164,4 +181,6 @@ screenWidth();
 
 
  window.addEventListener('resize', screenWidth);
+ 
+
  

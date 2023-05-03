@@ -998,7 +998,35 @@ header {
 
 
 
+/* -----------------------------FOOTER---------------------------------- */
 
+
+.footer__social{
+
+    width: 100%;
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.footer__separator{
+    display: block;
+    width: 35%;
+    height: 2px;
+    background-color: rgb(67, 67, 67);
+}
+
+.footer__socialmedia{
+    
+    width: 180px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    
+}
 
 
 
