@@ -45,10 +45,10 @@
             <nav class="header__navbar">
 
 
-                <a href="" class="header__menitem header__menitem--inicio">Inicio</a>
-                <a href="" class="header__menitem header__menitem--tienda">Tienda</a>
-                <a href="" class="header__menitem header__menitem--contacto">Contacto</a>
-                <a href="" class="header__menitem  header__menitem--iniciars">Iniciar Sesion<img
+                <a href="#home" class="header__menitem header__menitem--inicio">Inicio</a>
+                <a href="#tienda" class="header__menitem header__menitem--tienda">Tienda</a>
+                <a href="#footer" class="header__menitem header__menitem--contacto">Contacto</a>
+                <a href="login.html" class="header__menitem  header__menitem--iniciars">Iniciar Sesion<img
                         src="resources/user.svg" class="header__userimg"></a>
 
 
@@ -60,17 +60,21 @@
             <h1>Tienda Online</h1>
             <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident debitis unde harum voluptate
                 reiciendis consequuntur vero laudantium quaerat fuga expedita!</h2>
-            <button class="header__button">Comprar</button>
-            <button class="header__button header__button--special">Registarse</button>
+            <form action="" class="header__form">
+
+                <button class="header__button">Comprar</button>
+                <button class="header__button header__button--special" formaction="signin.html">Registarse</button>
+            </form>
+
         </div>
 
-        <a href="#discount" class="header__arrow">
+        <a href="#tienda" class="header__arrow">
 
             <img src="resources/arrow.svg" class="header__arrowimg">
         </a>
     </header>
 
-    <section class="offers" id="discount">
+    <section class="offers" id="tienda">
 
         <img src="resources/offers-background.jpg" class="offers__background">
         <h1 class="offers__title">OFERTAS</h1>
@@ -180,7 +184,7 @@
 
     </section>
     <section class="info"></section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
 
         <div class="footer__form">
             <h2 class="footer__formtitle">Suscribete al newsletter</h2>
@@ -196,8 +200,9 @@
                 <div>
 
                     <input type="checkbox" id="footer__checkbox">
-                    <label  class="footer__tym"for="footer__checkbox">Acepto los <a href="" class="footer__atym">terminos y condiciones</a></label>
-                    
+                    <label class="footer__tym" for="footer__checkbox">Acepto los <a href=""
+                            class="footer__atym">terminos y condiciones</a></label>
+
                 </div>
 
 
