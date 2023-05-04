@@ -208,6 +208,11 @@ header {
 
 }
 
+.header__form{
+    display: flex;
+    flex-direction: column;
+}
+
 .header__button {
 
     border: none;
